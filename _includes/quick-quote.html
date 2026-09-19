@@ -1,0 +1,14 @@
+<div class="card" style="border:2px solid var(--brand)">
+<span class="badge lime">Free · No obligation</span>
+<h3 style="margin-top:10px">{{ include.title | default: 'Get free quotes from accredited labs' }}</h3><p style="margin-bottom:14px">{{ include.sub | default: 'Tell us what you need tested — we match you with up to 3 suitable labs. Free, no obligation.' }}</p>
+<form class="form" data-lw-form data-subject="Quick quote request" data-next="{{ site.baseurl }}/thanks.html?f=quote">
+<input type="hidden" name="category" value="{{ include.cat }}">
+<div><label>What needs testing? <span class="req">*</span></label><input name="details" required placeholder="e.g. Lead & bacteria in well water"></div>
+<div class="form-row"><div><label>Name <span class="req">*</span></label><input name="name" required autocomplete="name"></div>
+<div><label>Email <span class="req">*</span></label><input type="email" name="email" required autocomplete="email"></div></div>
+<div class="form-row"><div><label>Country / city</label><input name="location" autocomplete="country-name"></div>
+<div><label>Samples</label><select name="samples"><option>1</option><option>2–5</option><option>6–20</option><option>21–100</option><option>100+ / recurring</option></select></div></div>
+<label class="check"><input type="checkbox" name="consent" value="yes" required> I agree to be contacted about my request (see <a href="{{ site.baseurl }}/privacy.html">privacy</a>).</label>
+<button class="btn btn-primary btn-block" type="submit">Get my free quotes →</button>
+<div class="trust-row"><span>Replies in 24–48h</span><span>Accredited labs</span><span>Details never sold</span></div>
+</form></div>
