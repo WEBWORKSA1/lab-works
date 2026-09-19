@@ -1,0 +1,6 @@
+title: Lab.Works
+url: "https://webworksa1.github.io"
+baseurl: "/lab-works"
+# For the custom domain lab.works: set url to https://lab.works, baseurl to "", and add a CNAME file.
+exclude: [build, README.md, PROMPT.md, RESEARCH.md, "*.py"]
+markdown: kramdown
