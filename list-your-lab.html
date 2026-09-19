@@ -1,0 +1,43 @@
+---
+layout: "default"
+full_title: "List Your Lab — Get Qualified Testing Requests | Lab.Works"
+description: "List your testing laboratory on Lab.Works. Free basic listing, featured placements and qualified RFQs from businesses, consultants and consumers."
+canonical: "https://lab.works/list-your-lab.html"
+og_type: "website"
+---
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do leads work?", "acceptedAnswer": {"@type": "Answer", "text": "When a request matches your categories, region and accreditation, we send you the requester's details so you can quote directly. Featured and Premium labs receive priority routing."}}, {"@type": "Question", "name": "Is there a contract?", "acceptedAnswer": {"@type": "Answer", "text": "No long-term contract. Paid plans are month-to-month and can be cancelled anytime."}}, {"@type": "Question", "name": "Do you verify accreditation?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We check certificates and scopes with the issuing accreditation body before awarding verification badges."}}]}</script>
+<div class="page-hero"><div class="container"><nav class="crumbs" aria-label="Breadcrumb"><a href="{{ site.baseurl }}/index.html">Home</a> › <span>List your lab</span></nav><span class="kicker">For laboratories</span><h1>Grow your lab with qualified requests</h1><p class="lead">Reach businesses, consultants, researchers and consumers actively looking for testing. Basic listings are free.</p></div></div><section><div class="container">
+<div class="grid g3">
+<div class="card plan"><h3>Basic</h3><div class="price">Free</div><ul><li>Lab profile page</li><li>Services & accreditation list</li><li>Website link</li><li>Eligible for standard matching</li></ul><a class="btn btn-ghost btn-block" href="#apply" data-plan="Free" onclick="document.getElementById('plan').value='Free'">List for free</a></div>
+<div class="card plan pop"><span class="badge lime ribbon">Most popular</span><h3>Featured</h3><div class="price">$99<small>/month</small></div><ul><li>Everything in Basic</li><li>Top placement in category & region</li><li>Verified accreditation badge</li><li>Priority RFQ routing</li><li>Logo on category pages</li></ul><a class="btn btn-primary btn-block" href="#apply" onclick="document.getElementById('plan').value='Featured'">Get featured</a></div>
+<div class="card plan"><h3>Premium Partner</h3><div class="price">$299<small>/month</small></div><ul><li>Everything in Featured</li><li>Homepage placement</li><li>Sponsored guide or video</li><li>Newsletter feature</li><li>Dedicated account manager</li></ul><a class="btn btn-ghost btn-block" href="#apply" onclick="document.getElementById('plan').value='Premium Partner'">Become a partner</a></div>
+</div>
+<p class="form-note center">Founding-partner launch pricing. Pay-per-lead options available on request.</p>
+</div></section>
+<section class="section-alt" id="apply"><div class="container layout">
+<div class="wizard" data-wizard>
+<form id="lab" data-lw-form data-subject="Lab listing application" data-next="thanks.html?f=lab">
+<div class="progress"><i></i></div><div class="step-labels"><span>1. Lab details</span><span>2. Capabilities</span><span>3. Plan</span></div>
+<fieldset class="wstep" style="border:0;padding:0;margin:0">
+<div class="form-row"><div><label>Laboratory name <span class="req">*</span></label><input name="lab_name" required></div><div><label>Website <span class="req">*</span></label><input type="url" name="website" required placeholder="https://"></div></div>
+<div class="form-row"><div><label>Country <span class="req">*</span></label><input name="country" required></div><div><label>City / address</label><input name="address"></div></div>
+<div class="form-row"><div><label>Contact name <span class="req">*</span></label><input name="name" required></div><div><label>Work email <span class="req">*</span></label><input type="email" name="email" required></div></div>
+<div><label>Phone</label><input type="tel" name="phone"></div>
+<div class="wnav"><span></span><button type="button" class="btn btn-primary" data-next-step>Continue →</button></div>
+</fieldset>
+<fieldset class="wstep" data-need="services" style="border:0;padding:0;margin:0">
+<div><label>Testing services <span class="req">*</span></label><div class="grid g2" style="gap:8px"><label class="check"><input type="checkbox" name="services" value="Water Testing"> Water Testing</label><label class="check"><input type="checkbox" name="services" value="Food & Beverage Testing"> Food & Beverage Testing</label><label class="check"><input type="checkbox" name="services" value="Environmental Testing"> Environmental Testing</label><label class="check"><input type="checkbox" name="services" value="Materials & Product Testing"> Materials & Product Testing</label><label class="check"><input type="checkbox" name="services" value="Pharma, Supplement & Cosmetics Testing"> Pharma, Supplement & Cosmetics Testing</label><label class="check"><input type="checkbox" name="services" value="Clinical & Health Lab Tests"> Clinical & Health Lab Tests</label><label class="check"><input type="checkbox" name="services" value="Microbiology Testing"> Microbiology Testing</label><label class="check"><input type="checkbox" name="services" value="Soil, Plant & Agriculture Testing"> Soil, Plant & Agriculture Testing</label><label class="check"><input type="checkbox" name="services" value="Cannabis & Hemp Testing"> Cannabis & Hemp Testing</label><label class="check"><input type="checkbox" name="services" value="DNA & Genetic Testing"> DNA & Genetic Testing</label></div></div>
+<div class="form-row"><div><label>Accreditations</label><input name="accreditations" placeholder="e.g. ISO/IEC 17025 (A2LA #1234.01), CLIA"></div><div><label>Typical turnaround</label><select name="turnaround"><option>24–48 h</option><option>3–5 days</option><option>1–2 weeks</option><option>Varies by test</option></select></div></div>
+<div><label>Sample intake</label><div class="chips"><label class="check"><input type="checkbox" name="intake" value="Ship-in"> Ship-in</label><label class="check"><input type="checkbox" name="intake" value="Drop-off"> Drop-off</label><label class="check"><input type="checkbox" name="intake" value="On-site sampling"> On-site sampling</label><label class="check"><input type="checkbox" name="intake" value="Mobile lab"> Mobile lab</label></div></div>
+<div><label>Regions served</label><input name="regions" placeholder="e.g. Ontario & Quebec; nationwide shipping"></div>
+<div class="wnav"><button type="button" class="btn btn-ghost" data-prev-step>← Back</button><button type="button" class="btn btn-primary" data-next-step>Continue →</button></div>
+</fieldset>
+<fieldset class="wstep" style="border:0;padding:0;margin:0">
+<div><label>Plan</label><select name="plan" id="plan"><option>Free</option><option>Featured</option><option>Premium Partner</option><option>Pay-per-lead (tell me more)</option></select></div>
+<div><label>Short description of your lab</label><textarea name="message" placeholder="Specialities, instruments, industries served…"></textarea></div>
+<label class="check"><input type="checkbox" name="consent" value="yes" required> I confirm I'm authorised to list this laboratory and accept the <a href="terms.html">terms</a>.</label>
+<div class="wnav"><button type="button" class="btn btn-ghost" data-prev-step>← Back</button><button type="submit" class="btn btn-primary">Submit application →</button></div>
+</fieldset>
+</form></div>
+<aside class="sidebar"><div class="card"><h3>What labs get</h3><ul style="padding-left:1.2em;color:var(--ink2)"><li>Requests with sample count, standard, deadline and budget</li><li>Traffic from test guides & calculators</li><li>Verified accreditation badge</li><li>No long-term contracts</li></ul></div><div class="card"><h3>FAQ</h3><details><summary>How do leads work?</summary><p>When a request matches your categories, region and accreditation, we send you the requester's details so you can quote directly. Featured and Premium labs receive priority routing.</p></details><details><summary>Is there a contract?</summary><p>No long-term contract. Paid plans are month-to-month and can be cancelled anytime.</p></details><details><summary>Do you verify accreditation?</summary><p>Yes. We check certificates and scopes with the issuing accreditation body before awarding verification badges.</p></details></div></aside>
+</div></section>
