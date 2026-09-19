@@ -1,0 +1,20 @@
+---
+layout: "default"
+full_title: "Contact Lab.Works | Lab.Works"
+description: "Contact Lab.Works about lab testing requests, partnerships, advertising, press or the lab.works domain."
+canonical: "https://lab.works/contact.html"
+og_type: "website"
+---
+<div class="page-hero"><div class="container"><nav class="crumbs" aria-label="Breadcrumb"><a href="{{ site.baseurl }}/index.html">Home</a> › <span>Contact</span></nav><span class="kicker">Get in touch</span><h1>Contact us</h1><p class="lead">Questions, partnerships, advertising or feedback — we usually reply within one business day.</p></div></div><section><div class="container layout"><form class="wizard form" data-lw-form data-subject="Contact form" data-next="thanks.html?f=contact">
+<div><label>Topic <span class="req">*</span></label><select name="topic" required><option value="">Choose…</option><option>Lab testing request</option><option>List my lab</option><option>Advertising / sponsorship</option><option>Donation / support</option><option>Contest question</option><option>Job posting</option><option>Write / work for Lab.Works</option><option>Domain / website acquisition (lab.works)</option><option>Press</option><option>Other</option></select></div>
+<div class="form-row"><div><label>Name <span class="req">*</span></label><input name="name" required autocomplete="name"></div><div><label>Email <span class="req">*</span></label><input type="email" name="email" required autocomplete="email"></div></div>
+<div class="form-row"><div><label>Phone</label><input type="tel" name="phone"></div><div><label>Organisation</label><input name="company"></div></div>
+<div><label>Message <span class="req">*</span></label><textarea name="message" required></textarea></div>
+<label class="check"><input type="checkbox" name="consent" value="yes" required> I agree to be contacted about my enquiry. <a href="privacy.html">Privacy</a></label>
+<button class="btn btn-primary" type="submit">Send message</button>
+</form>
+<aside class="sidebar">
+<div class="card"><h3>Quick links</h3><div class="toc"><a href="quote.html">Request lab quotes →</a><a href="list-your-lab.html">List your lab →</a><a href="advertise.html">Advertise →</a><a href="support.html">Support us →</a></div></div>
+<div class="card"><h3>Email</h3><p>Prefer your own email app?</p><a class="btn btn-ghost btn-sm" style="margin-top:12px" href="#" data-mail="Lab.Works enquiry">✉ Email Lab.Works</a></div>
+{% include domain-card.html %}
+</aside></div></section>
